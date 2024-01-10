@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+}
+
+.section_name {
+    font-family: 'Aubercf';
+}
+body, html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ============ navbox ============ */
+
+.logo {
+    padding: 20px 14px 20px 14px;
+    border-bottom: 2px solid white;
+}
+
+header {
+    background-color: #231f20;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navlist {
+    padding: 50% 15px 50% 15px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlist li {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* ============ main ============ */
+
+main {
+    background-color: #e6d8c4;
+    width: 100%;
+    height: 100%;
+
+
+    overflow: scroll; 
+    -ms-overflow-style: none; /* Enlève scrollbar Edge */
+    scrollbar-width: none; /* Enlève scrollbar Firefox */  
+}
+
+main::-webkit-scrollbar {
+    display: none; /* Enlève scrollbar Chrome */
+  }
+
+/* ============ a propos  ============ */
+
+#info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.photo {
+    margin: 90px;
+    font-size: 3rem;
+    font-family: 'Aubercf';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.photo .img {
+    width: 100%;
+    height: 200px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    background-color: #231f20;
+    color: #e6d8c4;
+    font-size: 4rem;
+}
+
+.profile h2 {
+    font-family: 'GabaritoReg';
+    padding-left: 3rem;
+    font-size: 4rem;
+}
+
+.profile .container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 11rem 11rem 26rem;
+    width: 60rem;
+}
+
+.profile .r1 {
+    font-family: 'Aubercf';
+    display: flex;
+    justify-content: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.profile .r2 {
+    padding: 20px;
+    font-family: 'Aubercf';
+    border: #e6d8c4 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.profile .r3 {
+    padding: 2%;
+    font-family: 'GabaritoReg';
+    border: #e6d8c4 solid 1px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    word-wrap: break-word;
+    line-height: 3.7rem;
+}
+
+
+
+/* ============ realisation  ============ */
+
+#creation {
+        width: auto;
+        height: auto;
+
+        padding: 60px 5% 60px 5%;
+        display: flex;
+        flex-direction: column;
+
+        
+        background-color: #231F20; /* == couleur de fond == */
+        background-size: 80px 80px;
+        background-position: 10px;
+        
+        background-image:
+        repeating-linear-gradient(
+          to right,
+          white 0,
+          white 1px, /*Dégradé de blanc vers blanc, allant de 0px à 1px */
+          transparent 1px,
+          transparent 100px /*Dégradé de transparent vers transparent, allant de 1px à 100px */
+        ),
+        repeating-linear-gradient(
+          to bottom,
+          white 0,
+          white 1px,
+          transparent 1px,
+          transparent 100px
+        );
+}
+
+.section_name { /* == Titre Section == */
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+}
+
+#creation .section_name h2 {
+    filter: drop-shadow(-4px 4px #ea5b3f);
+}
+#creation .section_name .line {
+    background-color: #ea5b3f;
+}
+
+.real { /* == Elements realisation == */
+    margin: 50px 0px 50px 0px;
+
+}
+
+.real:hover { 
+    animation: hover 1s forwards; 
+
+}
+
+.real .titre {
+    width: fit-content;
+    font-family: 'GabaritoReg';
+    background-color: #bab1a4;
+    font-size: 2rem;
+    padding: 20px 15px 20px 15px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.real .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FFF5E5;
+    border-radius: 0px 15px 15px 15px;
+    padding: 15px;
+}
+
+.real .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.real .text .nom {
+    font-family: 'GabaritoSemiB';
+    padding: 20px 20px 0px 20px;
+    color: #F54922;
+    font-size: 4rem;
+
+}
+
+.real .text .desc {
+    font-family: 'GabaritoReg';
+    font-size:2rem;
+    padding: 20px 0px 20px 50px;
+}
+
+.real .pict {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px;
+}
+.real .pict img {
+    border-radius: 15px;
+    max-height: 40rem;
+    max-width: 100%;
+}
+
+/* ============ contact ============ */
+
+#contact * {
+    font-family: 'GabaritoReg';
+}
+
+#contact {
+    background-color: #ea5b3f;
+    padding: 60px 5% 60px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .section_name h2 {
+    filter: drop-shadow(-4px 4px #0e1428);
+}
+
+#contact .section_name .line {
+    background-color: #0e1428;
+}
+
+#contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    width: 30%;
+
+}
+
+.info_contact a{
+    color: white;
+}
+
+
+.form_contact label {
+    color: white;
+    font-size: 1rem;
+}
+
+.form_contact {
+    width: 30%;
+}
+
+.form_contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.form_contact form input{
+    font-size: 1rem;
+    margin: 10px;
+    height: 2rem;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+}
+
+.form_contact form textarea{
+    font-size: 1rem;
+    margin: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+}
+
+.form_button {
+    background-color: #231f20;
+    color: white;
+}
+
+.form_button:hover {
+    animation: hover 1s forwards; 
+}
+
+
+
+@keyframes hover {
+    0% { transform: translate(0px, 0px); filter: drop-shadow(0px, 0px #ffdd00);}
+    100% {transform: translate(10px, -10px); filter: drop-shadow(-10px 10px #ffdd00);}
+}
