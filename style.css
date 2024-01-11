@@ -315,8 +315,11 @@ main::-webkit-scrollbar {
 
 
 .form_contact label {
-    color: white;
+    color: #231F20;
     font-size: 1rem;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .form_contact {
