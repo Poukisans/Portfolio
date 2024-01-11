@@ -12,6 +12,10 @@
     flex-shrink: 0;
 }
 
+#contact .section_name .line {
+    background-color: #0e1428;
+}
+
 .line {
     display: block;
     height: 3px;
