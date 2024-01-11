@@ -368,12 +368,12 @@ main::-webkit-scrollbar {
 }
 
 .form_button:hover {
-    animation: button_hover 1s forwards; 
+    animation: hover 1s forwards; 
 }
 
 
 
-@keyframes button_hover {
+@keyframes hover {
     0% { transform: translate(0px, 0px); filter: drop-shadow(0px, 0px #ffdd00);}
     100% {transform: translate(10px, -10px); filter: drop-shadow(-10px 10px #ffdd00);}
 }
